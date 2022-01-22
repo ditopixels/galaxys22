@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Components/Header';
+import NotifyPurchase from './Components/NotifyPurchase';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <NotifyPurchase/> 
+      <Header/>
+      <div style={{padding:"0 6vw"}}>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <br/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
+        </p>
+        <br/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
+        </p>
+        <br/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
+        </p>
+        <br/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
+        </p>
+        <br/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus laboriosam dignissimos neque dolorum quia magnam, sint a molestiae earum non saepe ducimus perspiciatis eum quasi reiciendis! Quam similique adipisci pariatur provident quo eaque hic quisquam sed, enim quaerat in, omnis explicabo repudiandae voluptatibus repellendus fugiat. Enim architecto tenetur veniam? Corporis nobis deserunt fugit incidunt tempora ex accusantium beatae ad a possimus repellendus pariatur atque voluptatibus cum assumenda ipsam et corrupti quaerat, eligendi esse qui id quia obcaecati cupiditate. Quod animi ex ipsum deserunt veniam unde, nobis magni expedita. Facere amet sapiente, pariatur necessitatibus ipsam sit cupiditate dolore tenetur explicabo rerum non quis numquam, nam veritatis nostrum cum fuga voluptates enim perspiciatis, debitis iusto! Voluptates veniam suscipit tempora quo, molestiae delectus accusantium expedita quibusdam alias consequatur soluta recusandae perspiciatis, non id? Dolorum explicabo delectus a ipsam ipsum, fuga, odio quibusdam harum nesciunt eaque repudiandae itaque, quis architecto sint est! Repellat.
+        </p>
+        <br/>
+      </div>
     </div>
   );
 }
