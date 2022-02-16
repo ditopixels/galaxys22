@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-PE">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Somos una organizacion dedicada a la creación de software"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+    <base href="/react/">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico" />
+    <title>Samsung Perú | Smartphones | Tablets | TV | Electrodomésticos</title>
+    <meta name="title" content="Samsung Perú | Smartphones | Tablets | TV | Electrodomésticos" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta name="description" content="Samsung te ayuda a descubrir dispositivos electrónicos con tecnología de última generación incluyendo smartphones, tablets, TVs, electrodomésticos y más." />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, shrink-to-fit=no, width=device-width" />
+    <link rel="canonical" href="https://www.samsung.com.pe/" />
+    <meta name="keywords" content="Samsung, Samsung Electronics, Samsung Smartphones, Samsung TV, Samsung Electrodomésticos" />
+    <meta name="sitecode" content="pe" />
+    <meta name="twitter:card" content="Summary" />
+    <meta name="twitter:site" content="@Samsung_Peru" />
+    <meta name="twitter:creator" content="@Samsung_Peru" />
+    <meta name="twitter:url" content="https://www.samsung.com/pe/" />
+    <meta name="twitter:title" content="Samsung Perú | Smartphones | Tablets | TV | Electrodomésticos" />
+    <meta name="twitter:description" content="Samsung te ayuda a descubrir dispositivos electrónicos con tecnología de última generación incluyendo smartphones, tablets, TVs, electrodomésticos y más." />
+    <meta name="twitter:image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png" />
+    <meta property="og:url" content="https://www.samsung.com/pe/" />
+    <meta property="og:image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Samsung pe" />
+    <meta property="og:locale" content="es-PE" />
+    <meta property="og:title" content="Samsung Perú | Smartphones | Tablets | TV | Electrodomésticos" />
+    <meta property="og:description" content="Samsung te ayuda a descubrir dispositivos electrónicos con tecnología de última generación incluyendo smartphones, tablets, TVs, electrodomésticos y más." />
+    <meta property="og:country-name" content="pe" />
+    <meta itemprop="name" content="Samsung pe" />
+    <meta itemprop="image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png" />
+    <meta itemprop="url" content="https://www.samsung.com/pe/" />
+    <meta itemprop="description" content="Samsung te ayuda a descubrir dispositivos electrónicos con tecnología de última generación incluyendo smartphones, tablets, TVs, electrodomésticos y más." />
+    <meta itemprop="keywords" content="Samsung, Samsung Electronics, Samsung Smartphones, Samsung TV, Samsung Electrodomésticos" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="gnb.js" async="async"></script>
+    <script>
+        if (navigator.userAgent.indexOf("MSIE") >= 0) {
+            window.location.href = 'ie-warning.html';
+        }
+    </script>
 
-    <title>MindCode - Developers</title>
+    <script>
+      CHEIL = {
+          ENV: 'DEV',
+          RECAPTCHA: '6Lew4qkZAAAAAK50VC6HnGpNerA20BbixccSFcTh',
+          ADOBETARGET: {
+              //- at_property: 'a20a2555-e298-b7c7-0bd0-8e6509acf961', // DEVELOPMENT
+              //- at_property: 'c8c749b7-3d18-752a-443e-a5ac109baa0f', // PRODUCTION
+          },
+          DEPLOY: 1,
+          IS_DEV: true,
+          endpoints: {
+              SUBSCRIBE_ENDPOINT: '',
+              REGISTER_ENDPOINT: '',
+              UBIGEO_ENDPOINT: '',
+              UPLOAD_ENDPOINT: '',
+              COMPLAINTSBOOK_ENDPOINT: ''
+          }
+      };
+    </script>
+    <script>
+      if (!window.HTMLPictureElement) {
+          var loadJS = function(u) {
+              var r = document.getElementsByTagName("script")[0],
+                  s = document.createElement("script");
+              s.src = u;
+              r.parentNode.insertBefore(s, r);
+          };
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!------------------>
+          document.createElement('picture');
+          loadJS({
+              url: 'scripts/respimage-1.4.2.min-dist.js'
+          });
+          /* FOR LAZY LOADING */
+          loadJS({
+              url: 'https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js'
+          });
+
+          window.onload = function() {
+              document.body.classList.add('no-webp');
+          };
+      }
+    </script>
+    <script src="jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

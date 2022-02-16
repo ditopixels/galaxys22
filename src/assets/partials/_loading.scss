@@ -1,0 +1,62 @@
+#loading {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.splash-samsung {
+  background-color: #000;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.splash-samsung__loader {
+  position: relative;
+  top: calc((100% / 2) - 40px);
+  width: 220px;
+  margin: auto;
+}
+
+.splash-samsung__loader__content {
+  width: 70px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.splash-samsung__loader__content > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  animation: 1.4s ease-in-out infinite both sk-bouncedelay;
+}
+
+.splash-samsung__loader .bounce1 {
+  animation-delay: -.32s;
+}
+
+.splash-samsung__loader .bounce2 {
+  animation-delay: -.16s;
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  100%,
+  80% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}

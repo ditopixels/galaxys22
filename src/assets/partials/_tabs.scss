@@ -1,0 +1,34 @@
+.ch-tabs {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: $ch-color--94;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  &__item {
+    border-bottom: 2px solid transparent;
+    width:  calc-grid-col(23, 10);
+    padding: 12px 0 10px;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 2px solid $ch-color--00;
+      color: $ch-color--00;
+    }
+  }
+
+  @include mq($from: small) {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 64px;
+
+    &__item {
+      border-bottom: 3px solid transparent;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+// Base font size
+$base-font-size--md: 16;
+
+@function calc-grid-col($total-columns, $columns) {
+  @return (100% / $total-columns) * $columns;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function rem($font-size) {
+  @return (strip-unit($font-size) / $base-font-size--md) * 1rem;
+}
+
+// #region Breakpoints (sass-mq)
+$mq-breakpoints: (
+  xxsmall:      320px,
+  xsmall:       375px,
+  xslandscape:  540px,
+  small:        768px,
+  medium:       961px,
+  mdlandscape: 1116px,
+  mdlarge:     1152px,
+  large:       1280px,
+  xlarge:      1600px,
+  xxlarge:     2000px
+);
+// #endregion
+
+// #region Grid
+$ch-grid--cols--xs: 27;
+$ch-grid--cols--sm: 31;
+$ch-grid--cols--md: 31;
+
+$ch-grid--col-width--xs: floor(map-get($mq-breakpoints, xxsmall) / $ch-grid--cols--xs); //  320px / 15 => 21px;
+$ch-grid--col-width--sm: floor(map-get($mq-breakpoints, small) / $ch-grid--cols--sm);   //  768px / 31 => 24px;
+$ch-grid--col-width--md: floor(map-get($mq-breakpoints, large) / $ch-grid--cols--md);   // 1280px / 31 => 41px;
+
+$ch-grid--max-width--xs: 100%;
+$ch-grid--max-width--sm: 100%;
+$ch-grid--max-width--md: ($ch-grid--col-width--md * $ch-grid--cols--md); // 41px per col * 31 cols => 1271px
+// #endregion
+
+// #region Colors
+$ch-color--0a: #04afda;
+$ch-color--ff: #ffffff;
+$ch-color--c4: #C4C4C4;
+$ch-color--f7: #F7F7F7;
+$ch-color--00: #000000;
+$ch-color--e7: #EE3037;
+$ch-color--40: #404040;
+$ch-color--f0: #f0f0f0;
+$ch-color--fd: #F4F9FD;
+$ch-color--e5: #020202;
+$ch-color--94: #949494;
+$ch-color--a0: #ADB7C0;
+$ch-color--54: #585454;
+$ch-color--e2: #e2e2e2;
+$ch-color--e7e7: #e7e7e7;
+$ch-color--b5: #B5D8DC;
+$ch-color--df: #DFDEDE;
+$ch-color--dc: #DCE8E9;
+$ch-color--9b: #9BA5A6;
+$ch-color--6e: #6E6E6E;
+$ch-color--36: #363636;
+$ch-color--d0: #d0d0d0;
+$ch-color--31: #313131;
+$ch-color--79: #797979;
+$ch-color--cc: #f7cccc;
+$ch-color--2c: #272A2C;
+$ch-color--11: #111111;
+$ch-color--9d: #9D9D9D;
+$ch-color--4c: #4E524C;
+$ch-color--0c: #0b0b0c;
+$ch-color--584: #597684;
+$ch-color--e5e5e5: #E5E5E5;
+$ch-color--fbfb: #FBFBFD;
+$ch-color-d7: #D7D7D7;
+$ch-color-blue2: #0D2EA0;
+$youtube-red: #dd352e;
+$lightblue2: #76BBFF;
+$hoverblue2: #51DFFE;
+$thumbnailGray: #f4f4f4;
+
+$successBg: #A5E8B8;
+$success: #177431;
+$errorBg: #FF8C8C;
+
+
+$genericBlue: #000AFF;
+$sesLightblue: #0078B4;
+$sliderNavGray: #333;
+
+$lifestyleBlue: #3CC5D3;
+
+
+$heroMainGray: #F8F8F8;
+// $color-secondary: $ch-color--0f;
+// $color-secondary-dark: darken($color-secondary, 10%);
+// $color-secondary-light: lighten($color-secondary, 5%);
+
+// Aceleraciones
+$time-faster: 0.1s;
+$time-fast:   0.2s;
+$time-mean:   0.4s;
+$time-slow:   0.6s;
+$time-slower: 0.8s;
+
+$type-heading: 'SamsungSharpSans', Arial;
+$type-content: 'SamsungOne', Arial;
+
+$type-light:      300;
+$type-regular:    400;
+$type-medium:     500;
+$type-semibold:   600;
+$type-bold:       700;
+
+// z-index stack
+// https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/
+$stack: global-footer, global-header;
+
+$transition--ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$transition--ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$transition--ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition--ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+// Global's Category (Rolly)
+@mixin media($maxwidth) {
+  @media only screen and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin centerDiv($fd) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @if($fd) {
+    flex-direction: $fd !important;
+  }
+}
+
+$col-medium-size: 42;
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2 / 1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+:root{
+  --swiper-theme-color: #000 !important;
+  --swiper-navigation-size: 25px !important;
+}

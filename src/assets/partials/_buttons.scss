@@ -1,0 +1,103 @@
+.ch-btn {
+  background-color: $ch-color--00;
+  box-sizing: border-box;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: $ch-color--ff;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  padding: 15px 20px 13px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+  position: relative;
+  transition: background-color $time-fast ease-in-out, color $time-fast ease;
+
+  &:hover {
+    background-color: rgba($ch-color--00, .8);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--outline {
+    padding: 10px 20px 8px;
+    background-color: transparent;
+    color: $ch-color--00;
+    border: 1px solid $ch-color--00;
+
+    &.inverted {
+      border-color: $ch-color--ff;
+      color: $ch-color--ff;
+    }
+
+    &:hover {
+      background-color: $ch-color--00;
+      color: $ch-color--ff;
+    }
+  }
+
+  &--white {
+    background-color: $ch-color--ff;
+    color: $ch-color--00;
+
+    &:hover,
+    &.active {
+      background-color: $ch-color--ff;
+      color: $ch-color--00;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border: 2px solid rgba($ch-color--ff, .3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    border-bottom-color: $ch-color--ff;
+    animation: rotate 500ms linear infinite;
+    display: none;
+
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+  }
+
+  &.active {
+    color: transparent;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  &.small {
+    padding: 6px 20px 4px;
+    font-size: 12px;
+    margin: 0 auto;
+
+    @include mq($from: small) {
+      max-width: 200px;
+      padding: 10px 20px 8px;
+    }
+  }
+
+  &.medium {
+    padding: 11px 20px 9px;
+    font-size: 14px;
+    margin: 0 auto;
+
+    @include mq($from: small) {
+      // max-width: 200px;
+      // padding: 10px 20px 8px;
+    }
+  }
+}

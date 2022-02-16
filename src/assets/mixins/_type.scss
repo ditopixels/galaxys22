@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('../fonts/SamsungOne-400.woff2') format('woff2'),
+  url('../fonts/SamsungOne-400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('../fonts/SamsungOne-700.woff2') format('woff2'),
+  url('../fonts/SamsungOne-700.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url('../fonts/SamsungSharpSansBd.woff2') format('woff2'),
+  url('../fonts/SamsungSharpSansBd.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans-Medium';
+  src: url('../fonts/SamsungSharpSans-Medium.woff2') format('woff2'),
+  url('../fonts/SamsungSharpSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans-Normal';
+  src: url('../fonts/samsungsharpsans.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Kittithada';
+	font-style: normal;
+	font-weight: normal;
+  src: url('https://www.samsung.com/assets/resources/fonts/KittithadaRoman55F.woff') format('woff'),
+  url('https://www.samsung.com/assets/resources/fonts/KittithadaRoman55F.ttf') format('truetype'),
+  url('https://www.samsung.com/assets/resources/fonts/KittithadaRoman55F.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+  font-display: swap;
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'Kittithada';
+  src: url('https://www.samsung.com/assets/resources/fonts/kit65f-webfont.woff') format('woff'),
+  url('https://www.samsung.com/assets/resources/fonts/kit65f-webfont.ttf') format('truetype'),
+  url('https://www.samsung.com/assets/resources/fonts/kit65f-webfont.eot?#iefix') format('embedded-opentype');
+}

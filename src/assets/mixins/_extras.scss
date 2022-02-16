@@ -1,0 +1,36 @@
+@mixin no-webp-bg($image) {
+  .no-webp & {
+    background-image: url(#{$image}) !important;
+  }
+}
+
+// @mixin no-webp-bg($element, $image) {
+//   .no-webp {
+//     #{$element} {
+//       background-image: url(#{$image}) !important;
+//     }
+//   }
+// }
+
+
+@mixin recaptcha() {
+  #inline-recaptcha {
+    display: none;
+  }
+
+  .recaptcha-text {
+    padding: 0 6%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    display: block;
+
+    @include mq($from: small) {
+      padding: 0 10%;
+    }
+
+    // @include mq($from: medium) {
+    //   padding: 0 33%;
+    // }
+  }
+}

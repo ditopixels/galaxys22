@@ -1,0 +1,58 @@
+#countdown{
+  margin: 0 auto;
+  margin-bottom: 35px;
+  &.active{
+    .countdown > div{
+      animation: opacity .3s ease infinite;
+    }
+  }
+  .countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >div{
+      display: flex;
+      flex-direction: column;
+      margin-right: 14px;
+
+    }
+    >div:last-child{
+      margin-right: 0;
+    }
+    span.value{
+      margin-bottom: 6px;
+    }
+    &-seconds span.value::after{
+      content: unset;
+    }
+  }
+  span.value{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2.73px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span.value::after{
+    position: absolute;
+    content: ":";
+    right: -12px;
+    top: -2px;
+  }
+  span{
+    text-align: center;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .5px;
+  }
+}
+@keyframes opacity {
+  50%{
+    opacity: 0;
+  }
+}

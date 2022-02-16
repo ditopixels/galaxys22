@@ -1,6 +1,8 @@
-.App{
-    min-height: 100vh;
-    background-image: url(./assets/background-body.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
+@import 'assets/partials/common';
+@import 'assets/partials/base';
+@import 'assets/partials/loading';
+@import 'assets/partials/buttons';
+@import 'assets/partials/tabs';
+@import 'assets/partials/form-controls';
+@import 'assets/partials/modal';
+@import 'assets/partials/countdown';

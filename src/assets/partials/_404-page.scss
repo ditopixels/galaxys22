@@ -1,0 +1,18 @@
+// * {
+//   border: 1px solid red;
+// }
+
+// @include mq($from: small) {
+//   * {
+//     border: 1px solid blue;
+//   }
+// }
+
+// @include mq($from: medium) {
+//   * {
+//     transition: div ease .5s;
+//     user-select: none;
+//     background: linear-gradient(to bottom, white, black);
+//     border: 1px solid lime;
+//   }
+// }
