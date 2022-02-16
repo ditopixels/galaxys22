@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.941ae074.css",
+    "main.js": "/static/js/main.9bbdf898.js",
+    "static/media/SamsungOne-700.woff": "/static/media/SamsungOne-700.1697852529fac0863c0a.woff",
+    "static/media/SamsungOne-400.woff": "/static/media/SamsungOne-400.32a881d5695168be7d58.woff",
+    "static/media/SamsungOne-700.woff2": "/static/media/SamsungOne-700.4a238fd59b117510d266.woff2",
+    "static/media/SamsungOne-400.woff2": "/static/media/SamsungOne-400.47cf51b6b528826dfbe8.woff2",
+    "static/media/test-model.png": "/static/media/test-model.9ef89a49d4139aed5e79.png",
+    "static/media/samsungsharpsans.otf": "/static/media/samsungsharpsans.f1f1b03f266759e52c8e.otf",
+    "static/media/SamsungSharpSansBd.woff": "/static/media/SamsungSharpSansBd.a81d72fc3753147dfc3a.woff",
+    "static/media/SamsungSharpSans-Medium.woff": "/static/media/SamsungSharpSans-Medium.7ef578088d1d2d70ef55.woff",
+    "static/media/SamsungSharpSansBd.woff2": "/static/media/SamsungSharpSansBd.d68d42a3e3e36d736c69.woff2",
+    "static/media/banner-galaxys22.webp": "/static/media/banner-galaxys22.0fee008749e56f7922cd.webp",
+    "static/media/SamsungSharpSans-Medium.woff2": "/static/media/SamsungSharpSans-Medium.e5ce8793713c334eb54c.woff2",
+    "index.html": "/index.html",
+    "static/media/tooltip.svg": "/static/media/tooltip.03d512c2f587224f351d.svg",
+    "static/media/newwindow.svg": "/static/media/newwindow.551a41f2e084971fb030.svg",
+    "static/media/svg-arw-right-gray.svg": "/static/media/svg-arw-right-gray.5eccca6b94c6a69c055a1aada7c24bb2.svg",
+    "static/media/svg-close.svg": "/static/media/svg-close.9d3336ad2c2dc6505e84747ddbc0c2db.svg",
+    "static/media/svg-btn-arw-down-black.svg": "/static/media/svg-btn-arw-down-black.584bd4d25fe2452fded1.svg",
+    "main.941ae074.css.map": "/static/css/main.941ae074.css.map",
+    "main.9bbdf898.js.map": "/static/js/main.9bbdf898.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.941ae074.css",
+    "static/js/main.9bbdf898.js"
+  ]
+}
